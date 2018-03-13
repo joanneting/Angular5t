@@ -8,8 +8,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name='LuxProtoss';
   url='http://www.google.com';
+  now=new Date;
 
   zzz(){
     console.log("123456");
   }
+
+  aaa:Account={
+    account:'lux',
+    password:'abc123'
+  }
+}
+
+
+
+
+export interface Account{
+  account:string,
+  password:string
 }
