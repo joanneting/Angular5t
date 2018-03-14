@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-lesson2',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lesson2.component.css']
 })
 export class Lesson2Component implements OnInit {
-
+  @Input()  abc = 100;
+  @Output() countChange:EventEmitter<number> = new EventEmitter<number>();
   constructor() { }
 
   ngOnInit() {
@@ -19,5 +20,9 @@ export class Lesson2Component implements OnInit {
     this.show=!this.show;
   }
 
+  change(event:any){
+    this.countChange.emit(event)
+    // console.log(event)
+  }
 
 }
