@@ -18,7 +18,9 @@ import { Lesson5Component } from './lesson5/lesson5.component';
 import { InputButtonComponent } from './input-button/input-button.component';
 import { Lesson6Component } from './lesson6/lesson6.component';
 import { HightlightDirective } from './hightlight.directive';
-import { Lesson61Component } from './lesson6-1/lesson6-1.component';  //別人的moudule
+import { Lesson61Component } from './lesson6-1/lesson6-1.component';
+import { Homework2Component } from './homework2/homework2.component';
+import { Homework2BtnComponent } from './homework2-btn/homework2-btn.component';  //別人的moudule
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { Lesson61Component } from './lesson6-1/lesson6-1.component';  //別人�
     InputButtonComponent,
     Lesson6Component,
     HightlightDirective,
-    Lesson61Component
+    Lesson61Component,
+    Homework2Component,
+    Homework2BtnComponent
   ],
   imports: [
     BrowserModule,

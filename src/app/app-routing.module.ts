@@ -16,6 +16,7 @@ const routes: Routes = [
     {path:'lesson4',component:Lesson4Component},
     {path:'lesson5',component:Lesson5Component},
     {path:'lesson6',component:Lesson6Component},
+    // {path:'homework2',component:Homework2Component},
     {path:'**',component:Lesson61Component}
 ];
 
